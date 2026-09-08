@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { autenticaciones } = require('../../middlewares');
-const { roles } = require('../../controladores/recursos_humanos');
+const { roles } = require('../../controladores/personal');
 
 //OBTENER ROLES
 router.get('/', 

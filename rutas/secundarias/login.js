@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { apilimiters } = require('../../middlewares');
-const { personal } = require('../../controladores/recursos_humanos');
+const { personal } = require('../../controladores/personal');
 
 //LOGIN
 router.post('/', 

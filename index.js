@@ -13,7 +13,7 @@ const middlewares = require('./middlewares');
 const { autenticaciones, apilimiters } = middlewares;
 
 //RUTAS
-const recursos_humanos = require('./rutas/principales/recursos_humanos');
+const personal = require('./rutas/principales/personal');
 const seguridad = require('./rutas/principales/seguridad');
 
 //PUERTO
@@ -91,7 +91,7 @@ app.get('/', (req, res) => {
 
 //ENDPOINTS RUTAS
 //PERSONAL
-app.use('/rrhh', recursos_humanos);
+app.use('/personal', personal);
 
 //SEGURIDAD
 app.use('/seguridad', seguridad);
