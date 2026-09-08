@@ -1,0 +1,24 @@
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Dependencias
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Coverage
+coverage/
+
+# Build
+dist/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
