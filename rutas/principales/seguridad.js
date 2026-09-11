@@ -1,12 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { autenticaciones, errormulter } = require('../../middlewares');
+const { autenticaciones } = require('../../middlewares');
 const { seguridad, logshistorial } = require('../../controladores/sistema');
-const multer = require('multer');
-const upload = multer({
-    storage: multer.memoryStorage(),
-    limits: { fileSize: 7 * 1024 * 1024 },
-});
 
 //OBTENER LOGIN ATTEMPTS
 router.get('/login/attempts', 
