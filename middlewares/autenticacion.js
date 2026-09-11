@@ -1,7 +1,5 @@
 const jwt = require('jsonwebtoken');
 const secretKey = process.env.JWT_SECRET;
-const facturapi_webhook_secret = process.env.FACTURAPI_WEBHOOK_SECRET;
-const crypto = require('crypto');
 const { parseCookies, obtenerToken } = require('../funciones/autenticaciones');
 
 exports.autenticacionLeve = (req, res, next) => {
